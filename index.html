@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tower Defense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <img style="display: none;" id="map" src="img/map.png"/>
+    <img style="display: none;" id="enemy-1" src="img/enemy-1.png" />
+    <img style="display: none;" id="enemy-2" src="img/enemy-2.png" />
+    <img style="display: none;" id="enemy-3" src="img/enemy-3.png"/>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <button class="btn-tower" data-value="little">Little tower</button>
+    <button class="btn-tower" data-value="medium">Medium tower</button>
+    <button class="btn-tower" data-value="big">Big tower</button>
+    <p>Lives: 
+        <span id="lives"></span>
+    </p>
+    <p>Money:
+        <span id="money"></span>
+    </p>
+</body>
+</html>
+<script src="src/loop.js"></script>
+<script src="src/enemies.js"></script>
+<script src="src/towers.js"></script>
+<script src="src/utils.js"></script>
+<script src="src/mouseEvents.js"></script>
+
+<style>
+    .btn-tower{
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+</style>
